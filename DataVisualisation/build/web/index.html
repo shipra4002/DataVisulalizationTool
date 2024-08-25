@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Main</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+    <h1 style="color:red">DATA VISUALIZATION TOOL</h1>
+    <h3>Create a New Table</h3>
+    <form action="createServlet" method="post">
+        <label for="tableName">Table Name:</label>
+        <input type="text" id="tableName" name="tableName" required><br>
+
+        <label for="numColumns">Number of Columns:</label>
+        <input type="number" id="numColumns" name="numColumns" min="1" required><br>
+
+        <label for="columnNames">Column Names (comma-separated):</label>
+        <input type="text" id="columnNames" name="columnNames" required><br>
+
+        <input type="submit" value="Create Table">
+        
+    </form>
+    </center>
+</body>
+</html>

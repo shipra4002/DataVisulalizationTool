@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>insert</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Insert Data into Table</h2>
+        <form action="insertServlet" method="post">
+            <label for="tableName">Table Name:</label>
+            <input type="text" id="tableName" name="tableName"><br><br>
+
+            <label for="columnData">Column Data (comma-separated):</label>
+            <input type="text" id="columnData" name="columnData" required><br><br>
+
+            <input type="submit" value="Insert Data">
+        </form>
+    </body>
+</html>
